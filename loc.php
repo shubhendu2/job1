@@ -3,7 +3,11 @@ $reqlevel=1;
 include "ck.php";
 
 ?>
-<form name="f1" method="post" action="lvalue.php">
+<html>
+<head>
+<script type="text/javascript" src="js1.js"></script>
+</head>
+
 <table border="0" width="300px" align="center" bgcolor="pink">
 <tr>
 <td  align="right">Location:</td>
@@ -12,8 +16,10 @@ include "ck.php";
 
 <tr>
 <td colspan="5" align="right"><br>
-<input type="submit" value=" ENTRY ">
-</td></tr></table></form>
+<input type="submit" onclick="myFunction()" value="ENTRY">
+</td></tr></table></html>
+<div id="div1">
+
 
 <table border="0" align="center" width="700px">
 <tr bgcolor="#63A6B8">
@@ -46,3 +52,4 @@ $select=mysql_query("select * from loc");
 	 }
 ?>
 </table>
+</div>
